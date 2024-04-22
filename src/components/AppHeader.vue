@@ -16,25 +16,25 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="tools">
-                    <li><img src="/img/image(1).svg" alt=""></li>
-                    <li><img src="/img/image(3).svg" alt=""></li>
+                    <li class="round"><img  src="/img/image(1).svg" alt=""></li>
+                    <li class="round"><img  src="/img/image(3).svg" alt=""></li>
                 </ul>
             </div>
         </div>
         <div class="container-lg">
             <div class="row hero-section">
                 <ul class="social">
-                    <li><a href="#"><img src="/img/image(4).svg" alt=""></a></li>
-                    <li><a href="#"><img src="/img/image(5).svg" alt=""></a></li>
-                    <li><a href="#"><img src="/img/image(6).svg" alt=""></a></li>
-                    <li><a href="#"><img src="/img/image(7).svg" alt=""></a></li>
+                    <li class="round"><a href="#"><img src="/img/image(4).svg" alt=""></a></li>
+                    <li class="round"><a href="#"><img src="/img/image(5).svg" alt=""></a></li>
+                    <li class="round"><a href="#"><img src="/img/image(6).svg" alt=""></a></li>
+                    <li class="round"><a href="#"><img src="/img/image(7).svg" alt=""></a></li>
                 </ul>
                 <div class="hero">
                     <h4>WELCOME TO RAXG</h4>
                     <h1>ARE YOU READY FOR YOUR NEXT CHALLENGE?</h1>
                     <ul class="buttons">
-                        <li><button class="big">Read more &rightarrow;</button></li>
-                        <li><button class="round">&triangleright;</button></li>
+                        <li><button class="big">Read more<img src="/img/image(8).svg" alt=""></button></li>
+                        <li><button class="round"><img src="/img/image(9).svg" alt=""></button></li>
                     </ul>
                 </div>
             </div>
@@ -89,13 +89,22 @@
 .tools{
     display: flex;
     align-items: center;
-    color: white;
     gap: 27px;
-    img{
-        filter: invert(100%);
-        width: 20px;
-
+    .round{
+        width:50px;
+        aspect-ratio: 1/1;
+        border-radius: 9999px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        img{
+            width: 20px;
+            aspect-ratio:1/1;
+        }
     }
+
+ 
 }
 .hero-section{
     margin-top:215px;
@@ -128,19 +137,45 @@
     }
     .big{
         padding: 0 32px;
-        border-radius:4px
+        border-radius:4px;
+        display:flex;
+        align-items: center;
+        gap:10px;
+        img{
+            width: 20px;
+            aspect-ratio:1/1;
+        }
     }
     .round{
         aspect-ratio: 1/1;
         border-radius: 9999px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 20px;
+            aspect-ratio:1/1;
+            transform:translateX(10%);
+        }
     }
 
 }
 .social{
-    
+    .round{
+        width:50px;
+        aspect-ratio: 1/1;
+        border-radius: 9999px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #202046;
+        margin-bottom:12px;
     img{
         filter: invert(100%);
         width: 20px;
+        transform: translateY(2px);
+    }
     }
 }
 .pictures{
