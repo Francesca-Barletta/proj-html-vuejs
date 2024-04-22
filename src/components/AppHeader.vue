@@ -5,43 +5,77 @@
 <template>
     <div class="section-header">
         <div class="container">
-    <div class="row">
-        <img class="logo" src="/img/menulogo.png" alt="">
-        <ul class="navbar">
-            <li>Home</li>
-            <li>Pages</li>
-            <li>Tournament</li>
-            <li>Shop</li>
-            <li>Blog</li>
-            <li>Contact</li>
-        </ul>
-        <ul class="tools">
-            <li><img src="/img/image(1).svg" alt=""></li>
-            <li><img src="/img/image(3).svg" alt=""></li>
-        </ul>
-    </div>
-    
-</div>
+            <div class="row navbar">
+                <img class="logo" src="/img/menulogo.png" alt="">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Tournament</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="tools">
+                    <li><img src="/img/image(1).svg" alt=""></li>
+                    <li><img src="/img/image(3).svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-lg">
+            <div class="row hero-section">
+                <ul class="social">
+                    <li><a href="#"><img src="/img/image(4).svg" alt=""></a></li>
+                    <li><a href="#"><img src="/img/image(5).svg" alt=""></a></li>
+                    <li><a href="#"><img src="/img/image(6).svg" alt=""></a></li>
+                    <li><a href="#"><img src="/img/image(7).svg" alt=""></a></li>
+                </ul>
+                <div class="hero">
+                    <h4>WELCOME TO RAXG</h4>
+                    <h1>ARE YOU READY FOR YOUR NEXT CHALLENGE?</h1>
+                    <ul class="buttons">
+                        <li><button class="big">Read more &rightarrow;</button></li>
+                        <li><button class="round">&triangleright;</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row pictures">
+                <div class="box"><img src="/img/1.png" alt=""></div>
+                <div class="box"><img src="/img/2.png" alt=""></div>
+                <div class="box"><img src="/img/3.png" alt=""></div>
+                <div class="box"><img src="/img/4.png" alt=""></div>
+                <div class="box"><img src="/img/5.png" alt=""></div>
+                <div class="box"><img src="/img/6.png" alt=""></div>
+            </div>
+        </div>
     </div>
 
 </template>
 
 <style lang="scss">
 .section-header{
-    background-image:url(/public/img/banner1.png)
+    background-image:url(/public/img/banner1.png);
+    height: 658px;
 }
 .container{
-    width: 1299px;
-    height: 900px;
+    width: 80%;
     margin: 0 auto;
+}
+.container-lg{
+    width: 90%;
+    margin: 0 auto;
+
 }
 .row{
     display:flex;
-    justify-content: space-between;
     align-items: center;
-    height: 70px;
 }
 .navbar{
+    height: 70px;
+    justify-content: space-between;
+}
+.menu{
     display: flex;
     align-items: center;
     color: white;
@@ -62,5 +96,63 @@
         width: 20px;
 
     }
+}
+.hero-section{
+    margin-top:215px;
+ 
+}
+.hero{
+    text-align: center;
+    width: 986px;
+    margin: 0 auto;
+    h4{
+        color: #05CC7C;
+    }
+    h1{
+        color: white;
+        font-size: 65px;
+    }
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom:44px;
+    button{
+        border: none;
+        background-color:#05CC7C;
+        height: 55px;
+        color:#202046;
+        font-size:16px;
+        font-weight: 700;
+    }
+    .big{
+        padding: 0 32px;
+        border-radius:4px
+    }
+    .round{
+        aspect-ratio: 1/1;
+        border-radius: 9999px;
+    }
+
+}
+.social{
+    
+    img{
+        filter: invert(100%);
+        width: 20px;
+    }
+}
+.pictures{
+    height: 235px;
+    background-color: #202046;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-bottom:-130px;
+    .box{
+        width:150px;
+        aspect-ratio: 1/1;
+    }
+   
 }
 </style>
