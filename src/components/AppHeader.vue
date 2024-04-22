@@ -55,7 +55,7 @@
 
 <style lang="scss">
 .section-header{
-    background-image:url(/public/img/banner1.png);
+    background-image:url(/img/banner1.png);
     background-size: cover;
     height: 900px;
 }
@@ -83,10 +83,18 @@
     align-items: center;
     color: white;
     gap: 27px;
+    li{
+        &:hover{
+            color:#05CC7C;
+        }
+    }
     img{
         width:10px;
         margin-left:1px;
         transform: translatey(10%);
+        &:hover{
+            fill:#05CC7C;
+        }
     }
 }
 .logo{
@@ -134,6 +142,7 @@
     display:flex;
     justify-content: center;
     gap: 17px;
+    margin-top: 50px;
     button{
         border: none;
         background-color:#05CC7C;
@@ -186,7 +195,7 @@
     }
 }
 .row-pictures{
-    margin: 0 auto;
+    width: 100%;
     height: 235px;
     background-color: #202046;
     display:flex;
