@@ -8,11 +8,11 @@
             <div class="row navbar">
                 <img class="logo" src="/img/menulogo.png" alt="">
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Home<img src="/img/image.svg" alt=""></a></li>
+                    <li><a href="#">Pages<img src="/img/image.svg" alt=""></a></li>
                     <li><a href="#">Tournament</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop<img src="/img/image.svg" alt=""></a></li>
+                    <li><a href="#">Blog<img src="/img/image.svg" alt=""></a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="tools">
@@ -39,8 +39,8 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row pictures">
+        <div class="container relative">
+            <div class="row-pictures">
                 <div class="box"><img src="/img/1.png" alt=""></div>
                 <div class="box"><img src="/img/2.png" alt=""></div>
                 <div class="box"><img src="/img/3.png" alt=""></div>
@@ -56,7 +56,8 @@
 <style lang="scss">
 .section-header{
     background-image:url(/public/img/banner1.png);
-    height: 658px;
+    background-size: cover;
+    height: 900px;
 }
 .container{
     width: 80%;
@@ -65,7 +66,9 @@
 .container-lg{
     width: 90%;
     margin: 0 auto;
-
+}
+.relative{
+    position:relative;
 }
 .row{
     display:flex;
@@ -80,6 +83,11 @@
     align-items: center;
     color: white;
     gap: 27px;
+    img{
+        width:10px;
+        margin-left:1px;
+        transform: translatey(10%);
+    }
 }
 .logo{
    height: 70px;
@@ -126,7 +134,6 @@
     display:flex;
     justify-content: center;
     gap: 17px;
-    margin-bottom:44px;
     button{
         border: none;
         background-color:#05CC7C;
@@ -178,15 +185,25 @@
     }
     }
 }
-.pictures{
+.row-pictures{
+    margin: 0 auto;
     height: 235px;
     background-color: #202046;
+    display:flex;
     justify-content: space-around;
+    align-items: center;
+    gap:5px;
     border-radius: 10px;
-    margin-bottom:-130px;
+    padding:0 10px;
+    position: absolute;
+    top:245px;
     .box{
         width:150px;
         aspect-ratio: 1/1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 30px;
     }
    
 }
