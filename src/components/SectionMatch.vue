@@ -210,6 +210,7 @@
 <style lang="scss" scoped>
 .section{
     background-color: #191935;
+    padding-bottom: 100px;
 }
 .container{
     width: 80%;
