@@ -6,7 +6,8 @@ import SectionMatch from './SectionMatch.vue';
 import SectionBest from './SectionBest.vue';
 import SectionTeam from './SectionTeam.vue';
 import SectionClient from './SectionClient.vue';
-import SectionShop from './SectionShop.vue'
+import SectionShop from './SectionShop.vue';
+import SectionBattle from './SectionBattle.vue'
 
 
 
@@ -19,7 +20,8 @@ export default{
         SectionBest,
         SectionTeam,
         SectionClient,
-        SectionShop
+        SectionShop,
+        SectionBattle
     }
 }
 
@@ -31,6 +33,7 @@ export default{
 <SectionStreaming/>
 <SectionMatch/>
 <SectionBest/>
+<SectionBattle/>
 <SectionTeam/>
 <SectionClient/>
 <SectionShop/>
