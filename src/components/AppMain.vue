@@ -1,9 +1,11 @@
 <script>
 import SectionCompany from './SectionCompany.vue';
+import SectionGaming from './SectionGaming.vue';
 
 export default{
     components: {
-        SectionCompany
+        SectionCompany,
+        SectionGaming
     }
 }
 
@@ -11,6 +13,7 @@ export default{
 
 <template>
 <SectionCompany/>
+<SectionGaming/>
 
 </template>
 

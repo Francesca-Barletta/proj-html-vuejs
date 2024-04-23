@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="section-company">
+    <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -57,7 +57,7 @@
 </template>
 
 <style lang="scss" scoped>
-.section-company{
+.section{
     background-color: #191935;
 }
 .container{
