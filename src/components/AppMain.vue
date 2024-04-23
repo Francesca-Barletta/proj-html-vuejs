@@ -6,6 +6,7 @@ import SectionMatch from './SectionMatch.vue';
 import SectionBest from './SectionBest.vue';
 import SectionTeam from './SectionTeam.vue';
 import SectionClient from './SectionClient.vue';
+import SectionShop from './SectionShop.vue'
 
 
 
@@ -17,7 +18,8 @@ export default{
         SectionMatch,
         SectionBest,
         SectionTeam,
-        SectionClient
+        SectionClient,
+        SectionShop
     }
 }
 
@@ -31,6 +33,7 @@ export default{
 <SectionBest/>
 <SectionTeam/>
 <SectionClient/>
+<SectionShop/>
 
 </template>
 

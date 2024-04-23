@@ -7,8 +7,8 @@
             <div class="box-header">
                 <div class="title">
                     <div>
-                        <h4>Team Members</h4>
-                        <h2>Our Experts Team<br> Members</h2>
+                        <h4>Gamer Shop</h4>
+                        <h2>Explore Our Shop</h2>
                     </div>
                     <ul class="flex">
                         <li>
@@ -25,42 +25,62 @@
  <!-- card1 -->
                 <div class="card">
                     <div class="card-header">
-                        <img src="/img/team1.png" alt="">
+                        <img src="/img/s1.png" alt="">
                         
                     </div>
                     <div class="card-body">   
-                            <h3>Cristiano Messi</h3>
-                            <h4>CEO/Founder</h4>
+                        <img class="green-star" src="/img/image(20).svg" alt="">
+                        <img class="green-star" src="/img/image(20).svg" alt="">
+                        <img class="white-star" src="/img/image(20).svg" alt="">
+                        <img class="white-star" src="/img/image(20).svg" alt="">
+                            <h3>Asus Rog Strix A53</h3>
+                            <span class="discount">$960.00</span>
+                            <span class="price">$999.00</span>
                     </div>
                 </div>
 <!-- card2 -->
                 <div class="card">
                     <div class="card-header">
-                        <img src="/img/team2.png" alt="">
+                        <img src="/img/s2.png" alt="">
                     </div>
-                    <div class="card-body">
-                            <h3>Sergio Naymer</h3>
-                            <h4>Programmer</h4>
+                    <div class="card-body">   
+                        <img class="green-star" src="/img/image(20).svg" alt="">
+                        <img class="green-star" src="/img/image(20).svg" alt="">
+                        <img class="white-star" src="/img/image(20).svg" alt="">
+                        <img class="white-star" src="/img/image(20).svg" alt="">
+                            <h3>Asus Rog Strix A53</h3>
+                            <span class="discount">$960.00</span>
+                            <span class="price">$999.00</span>
                     </div>
                 </div>
 <!-- card3 -->
                 <div class="card">
                     <div class="card-header">
-                        <img src="/img/team3.png" alt="">
+                        <img src="/img/s3.png" alt="">
                     </div>
-                    <div class="card-body">
-                            <h3>Antonel Roccuzzo</h3>
-                            <h4>Project Manager</h4>
+                    <div class="card-body">   
+                        <img class="green-star" src="/img/image(20).svg" alt="">
+                        <img class="green-star" src="/img/image(20).svg" alt="">
+                        <img class="white-star" src="/img/image(20).svg" alt="">
+                        <img class="white-star" src="/img/image(20).svg" alt="">
+                            <h3>Asus Rog Strix A53</h3>
+                            <span class="discount">$960.00</span>
+                            <span class="price">$999.00</span>
                     </div>
                 </div>
 <!-- card4 -->
                 <div class="card">
                     <div class="card-header">
-                        <img src="/img/team4.png" alt="">
+                        <img src="/img/s4.png" alt="">
                     </div>
-                    <div class="card-body">
-                            <h3>Lionel Ramos</h3>
-                            <h4>Game Designer</h4>
+                    <div class="card-body">   
+                        <img class="green-star" src="/img/image(20).svg" alt="">
+                        <img class="green-star" src="/img/image(20).svg" alt="">
+                        <img class="white-star" src="/img/image(20).svg" alt="">
+                        <img class="white-star" src="/img/image(20).svg" alt="">
+                            <h3>Asus Rog Strix A53</h3>
+                            <span class="discount">$960.00</span>
+                            <span class="price">$999.00</span>
                     </div>
                 </div>
             </div>
@@ -69,7 +89,7 @@
 </template>
 <style lang="scss" scoped>
 .section{
-    background-color: #191935;
+    background-image: url(/img/shop-bg.png);
 }
 .container{
     width:80%;
@@ -91,26 +111,21 @@
     margin-top:50px;
 }
 .card-header{
-    position: relative;
-    .new{
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 0;
-            color: #191935;
-            background-color: #05CC7C;
-            width: 60px;
-            height: 40px;
-        }
+    background-color: #191935;
+    border-radius: 20px;
+    height: 260px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-body{
-    text-align: center;
-    background-color: #152257;
     color:white;
     height: 85px;
     padding: 15px;
+    img{
+        width: 18px;
+        margin-right: 5px;
+    }
    
 }
 .flex{
@@ -120,6 +135,7 @@
     gap: 7px;
 }
 .title{
+    text-align: center;
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -166,24 +182,7 @@
           
         }
  }
- .round{
-        border: none;
-        background-color:#05CC7C;
-        height: 55px;
-        color:#202046;
-        font-size:16px;
-        font-weight: 700;
-        aspect-ratio: 1/1;
-        border-radius: 9999px;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-
-        img{
-            width: 20px;
-            aspect-ratio:1/1;
-            transform:translateX(10%);
-        }
-    
+    .discount{
+        color: #05CC7C;
     }
 </style>

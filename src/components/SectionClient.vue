@@ -43,6 +43,7 @@
 .container{
     width:80%;
     margin: 0 auto;
+    padding-bottom:100px;
 }
 .box-header{
     padding-top:100px;
