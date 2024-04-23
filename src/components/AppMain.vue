@@ -4,6 +4,7 @@ import SectionGaming from './SectionGaming.vue';
 import SectionStreaming from './SectionStreaming.vue';
 import SectionMatch from './SectionMatch.vue';
 import SectionBest from './SectionBest.vue';
+import SectionTeam from './SectionTeam.vue';
 
 
 export default{
@@ -12,7 +13,8 @@ export default{
         SectionGaming,
         SectionStreaming,
         SectionMatch,
-        SectionBest
+        SectionBest,
+        SectionTeam
     }
 }
 
@@ -24,6 +26,7 @@ export default{
 <SectionStreaming/>
 <SectionMatch/>
 <SectionBest/>
+<SectionTeam/>
 
 </template>
 
