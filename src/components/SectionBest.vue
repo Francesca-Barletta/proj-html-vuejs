@@ -3,7 +3,8 @@
 </script>
 <template>
     <div class="section">
-        <div class="container">
+        <div class="bg-overlay">
+            <div class="container">
             <div class="box-header">
                 <div class="title">
                     <div>
@@ -80,12 +81,17 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
 </template>
 <style lang="scss" scoped>
 .section{
     background-color: #202046;
     background-image: url(/img/protfolio-vector.png);
+    .bg-overlay{
+        background: rgba(25, 25, 53, 0.7);
+    }
+    
 }
 .container{
     width:80%;

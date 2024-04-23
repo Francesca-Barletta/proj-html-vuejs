@@ -4,6 +4,7 @@
 
 <template>
     <div class="section">
+      <div class="bg-section">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -51,6 +52,7 @@
                 </div>
             </div>
         </div>
+      </div>
 
 
     </div>
@@ -59,8 +61,11 @@
 
 <style lang="scss" scoped>
 .section{
-    background-color: #202046;
     background-image:url(/img/Vector.png);
+    background-color: #202046;
+    .bg-section{
+        background: rgba(25, 25, 53, 0.7);
+    }
     
 }
 .container{
@@ -77,8 +82,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    padding-top:270px;
-    padding-bottom: 100px;
+    padding:120px 0;
     gap: 0px;
 }
 .col-6{

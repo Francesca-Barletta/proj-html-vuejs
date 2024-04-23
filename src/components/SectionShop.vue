@@ -3,84 +3,86 @@
 </script>
 <template>
     <div class="section">
-        <div class="container">
-            <div class="box-header">
-                <div class="title">
-                    <div>
-                        <h4>Gamer Shop</h4>
-                        <h2>Explore Our Shop</h2>
-                    </div>
-                    <ul class="flex">
-                        <li>
-                            <button class="white"><img src="/img/image(11).svg" alt=""></button>
-                        </li>
-                        <li>
-                            <button class="green"><img src="/img/image(8).svg" alt=""></button>
-                        </li>
-                    </ul>
+        <div class="bg-overlay">
+            <div class="container">
+                <div class="box-header">
+                    <div class="title">
+                        <div>
+                            <h4>Gamer Shop</h4>
+                            <h2>Explore Our Shop</h2>
+                        </div>
+                        <ul class="flex">
+                            <li>
+                                <button class="white"><img src="/img/image(11).svg" alt=""></button>
+                            </li>
+                            <li>
+                                <button class="green"><img src="/img/image(8).svg" alt=""></button>
+                            </li>
+                        </ul>
 
-                </div>
-            </div>
-            <div class="box-card">
- <!-- card1 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/s1.png" alt="">
-                        
                     </div>
-                    <div class="card-body">   
-                        <img class="green-star" src="/img/image(20).svg" alt="">
-                        <img class="green-star" src="/img/image(20).svg" alt="">
-                        <img class="white-star" src="/img/image(20).svg" alt="">
-                        <img class="white-star" src="/img/image(20).svg" alt="">
+                </div>
+                <div class="box-card">
+                    <!-- card1 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/img/s1.png" alt="">
+
+                        </div>
+                        <div class="card-body">
+                            <img class="green-star" src="/img/image(20).svg" alt="">
+                            <img class="green-star" src="/img/image(20).svg" alt="">
+                            <img class="white-star" src="/img/image(20).svg" alt="">
+                            <img class="white-star" src="/img/image(20).svg" alt="">
                             <h3>Asus Rog Strix A53</h3>
                             <span class="discount">$960.00</span>
                             <span class="price">$999.00</span>
+                        </div>
                     </div>
-                </div>
-<!-- card2 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/s2.png" alt="">
-                    </div>
-                    <div class="card-body">   
-                        <img class="green-star" src="/img/image(20).svg" alt="">
-                        <img class="green-star" src="/img/image(20).svg" alt="">
-                        <img class="white-star" src="/img/image(20).svg" alt="">
-                        <img class="white-star" src="/img/image(20).svg" alt="">
+                    <!-- card2 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/img/s2.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <img class="green-star" src="/img/image(20).svg" alt="">
+                            <img class="green-star" src="/img/image(20).svg" alt="">
+                            <img class="white-star" src="/img/image(20).svg" alt="">
+                            <img class="white-star" src="/img/image(20).svg" alt="">
                             <h3>Asus Rog Strix A53</h3>
                             <span class="discount">$960.00</span>
                             <span class="price">$999.00</span>
+                        </div>
                     </div>
-                </div>
-<!-- card3 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/s3.png" alt="">
-                    </div>
-                    <div class="card-body">   
-                        <img class="green-star" src="/img/image(20).svg" alt="">
-                        <img class="green-star" src="/img/image(20).svg" alt="">
-                        <img class="white-star" src="/img/image(20).svg" alt="">
-                        <img class="white-star" src="/img/image(20).svg" alt="">
+                    <!-- card3 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/img/s3.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <img class="green-star" src="/img/image(20).svg" alt="">
+                            <img class="green-star" src="/img/image(20).svg" alt="">
+                            <img class="white-star" src="/img/image(20).svg" alt="">
+                            <img class="white-star" src="/img/image(20).svg" alt="">
                             <h3>Asus Rog Strix A53</h3>
                             <span class="discount">$960.00</span>
                             <span class="price">$999.00</span>
+                        </div>
                     </div>
-                </div>
-<!-- card4 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/s4.png" alt="">
-                    </div>
-                    <div class="card-body">   
-                        <img class="green-star" src="/img/image(20).svg" alt="">
-                        <img class="green-star" src="/img/image(20).svg" alt="">
-                        <img class="white-star" src="/img/image(20).svg" alt="">
-                        <img class="white-star" src="/img/image(20).svg" alt="">
+                    <!-- card4 -->
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/img/s4.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <img class="green-star" src="/img/image(20).svg" alt="">
+                            <img class="green-star" src="/img/image(20).svg" alt="">
+                            <img class="white-star" src="/img/image(20).svg" alt="">
+                            <img class="white-star" src="/img/image(20).svg" alt="">
                             <h3>Asus Rog Strix A53</h3>
                             <span class="discount">$960.00</span>
                             <span class="price">$999.00</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,6 +92,10 @@
 <style lang="scss" scoped>
 .section{
     background-image: url(/img/shop-bg.png);
+
+.bg-overlay{
+    background: rgba(25, 25, 53, 0.7);
+}
 }
 .container{
     width:80%;
@@ -117,6 +123,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
 }
 .card-body{
     color:white;

@@ -4,6 +4,7 @@
 
 <template>
     <div class="section">
+       <div class="bg-overlay">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -62,6 +63,7 @@
             </div>
         </div>
 
+       </div>
 
     </div>
 
@@ -72,9 +74,9 @@
    
     background-image: url(/img/v-bg.png);
     background-size: cover;
-
-    
-    
+    .bg-overlay{
+        background: rgba(25, 25, 53, 0.7);
+    }
 }
 .container{
     width:80%;
@@ -90,8 +92,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    padding-top:270px;
-    padding-bottom: 100px;
+    padding:120px 0;
     gap: 35px;
 }
 .col-6{
