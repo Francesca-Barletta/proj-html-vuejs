@@ -7,7 +7,8 @@ import SectionBest from './SectionBest.vue';
 import SectionTeam from './SectionTeam.vue';
 import SectionClient from './SectionClient.vue';
 import SectionShop from './SectionShop.vue';
-import SectionBattle from './SectionBattle.vue'
+import SectionBattle from './SectionBattle.vue';
+import SectionArticles from './SectionArticles.vue'
 
 
 
@@ -21,7 +22,8 @@ export default{
         SectionTeam,
         SectionClient,
         SectionShop,
-        SectionBattle
+        SectionBattle,
+        SectionArticles
     }
 }
 
@@ -37,6 +39,7 @@ export default{
 <SectionTeam/>
 <SectionClient/>
 <SectionShop/>
+<sectionArticles/>
 
 </template>
 
