@@ -5,6 +5,8 @@ import SectionStreaming from './SectionStreaming.vue';
 import SectionMatch from './SectionMatch.vue';
 import SectionBest from './SectionBest.vue';
 import SectionTeam from './SectionTeam.vue';
+import SectionClient from './SectionClient.vue';
+
 
 
 export default{
@@ -14,7 +16,8 @@ export default{
         SectionStreaming,
         SectionMatch,
         SectionBest,
-        SectionTeam
+        SectionTeam,
+        SectionClient
     }
 }
 
@@ -27,6 +30,7 @@ export default{
 <SectionMatch/>
 <SectionBest/>
 <SectionTeam/>
+<SectionClient/>
 
 </template>
 
