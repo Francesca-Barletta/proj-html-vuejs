@@ -2,12 +2,15 @@
 import SectionCompany from './SectionCompany.vue';
 import SectionGaming from './SectionGaming.vue';
 import SectionStreaming from './SectionStreaming.vue';
+import SectionMatch from './SectionMatch.vue';
+
 
 export default{
     components: {
         SectionCompany,
         SectionGaming,
-        SectionStreaming
+        SectionStreaming,
+        SectionMatch
     }
 }
 
@@ -17,6 +20,7 @@ export default{
 <SectionCompany/>
 <SectionGaming/>
 <SectionStreaming/>
+<SectionMatch/>
 
 </template>
 

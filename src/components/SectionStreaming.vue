@@ -10,7 +10,7 @@
                     <div class="box">
                         <div class="play">
                             <button class="round"><img src="/img/image(9).svg" alt=""></button>
-                            <h4>Call Of Duty</h4>
+                            <h4>Call Of Deauty</h4>
                         </div>
                         <img src="/img/v-1.png" alt="">
                     </div>
@@ -40,7 +40,7 @@
                                 <img src="/img/v-small1.png" alt="">
                             </div>
                             <div class="card-body">
-                                <h4>Call Of Duty</h4>
+                                <h4>Call Of Deauty</h4>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
@@ -70,8 +70,10 @@
 <style lang="scss" scoped>
 .section{
    
-    background-image:url(/img/v-bg.png);
+    background-image: url(/img/v-bg.png);
     background-size: cover;
+
+    
     
 }
 .container{
