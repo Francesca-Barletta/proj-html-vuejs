@@ -16,7 +16,7 @@
                             <button class="white"><img src="/img/image(11).svg" alt=""></button>
                         </li>
                         <li>
-                            <button class="green"><img src="/img/image(8).svg" alt=""></button>
+                            <button class="green"><img src="/img/image(12).svg" alt=""></button>
                         </li>
                     </ul>
 
@@ -182,6 +182,9 @@
       color:white;
       font-size:47px;
     }
+    button{
+        cursor: pointer;
+    }
 }
 .card-title{
 
@@ -274,6 +277,7 @@ gap: 10px;
 }
 
 button{
+        cursor:pointer;
         border: none;
         background-color:#05CC7C;
         height: 55px;
@@ -287,6 +291,14 @@ button{
         display:flex;
         align-items: center;
         gap:10px;
+        &:hover{
+            background-color:#202046;
+            color:#05CC7C;
+            border: 1px solid #05CC7C;
+            img{
+                filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
+            }
+        }
         img{
             width: 20px;
             aspect-ratio:1/1;
@@ -321,6 +333,7 @@ button{
         align-items: center;
         padding: 0 10px;
         button{
+            cursor:pointer;
             background-color: #05CC7C;
             color: #191935;
             height: 50px;
@@ -329,6 +342,11 @@ button{
             justify-content: center;
             align-items: center;
             padding: 18px;
+            &:hover{
+            background-color:#202046;
+            color:#05CC7C;
+            border: 1px solid #05CC7C;
+            }
         }
         img {
         width: 16px;

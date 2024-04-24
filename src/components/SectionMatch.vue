@@ -244,6 +244,12 @@
     display:flex;
     justify-content: center;
     gap: 10px;
+    li{
+        cursor:pointer;
+        &:hover{
+            color: #05CC7C;
+        }
+    }
 }
 .card-box{
     width: 100%;
@@ -254,6 +260,18 @@
     padding: 30px;
     gap: 70px;
     margin-bottom: 20px;
+    border:1px solid #05CC7C;
+    &:hover{
+        background-color: #333287;
+        border:none;
+        .card-info{
+            background-color: #05CC7C;
+            color: #202046;
+            .icon{
+                background-color: #202046;
+            }
+        }
+    }
 }
 .team-card{
     height:100%;
@@ -263,8 +281,8 @@
         display: flex;
         justify-content:center;
         align-items: center;
-        width: 190px;
-        height: 190px;
+        width: 240px;
+        height: 210px;
         padding: 10px;
         img{
             max-width: 60%;
@@ -319,8 +337,7 @@
     }
 }
 .card-info{
-    width: 35%;
-    padding: 10px;
+    width: 33%;
     aspect-ratio:1/1;
     border-radius: 20px;
     background-color: #191935;
@@ -340,6 +357,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: space-between;
 }
 .team-info{
     color: white;

@@ -56,6 +56,9 @@
     gap: 20px;
     padding-bottom: 100px;
     position: relative;
+    button{
+        cursor:pointer;
+    }
 }
 .card{
     width:calc(100%/4);

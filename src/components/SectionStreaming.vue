@@ -29,7 +29,7 @@
                                     <button class="white"><img src="/img/image(11).svg" alt=""></button>
                                 </li>
                                 <li>
-                                    <button class="green"><img src="/img/image(8).svg" alt=""></button>
+                                    <button class="green"><img src="/img/image(12).svg" alt=""></button>
                                 </li>
                             </ul>
 
@@ -103,6 +103,7 @@
  border-radius: 22px;
  position:relative;
  .play{
+    
     position:absolute;
     top:40%;
     left:50%;
@@ -130,6 +131,9 @@
     h2{
       color:white;
       font-size:47px;
+    }
+    button{
+        cursor: pointer;
     }
 }
 .green {
@@ -168,6 +172,7 @@
         }
  }
  .round{
+    cursor:pointer;
     border: none;
     height: 55px;
     aspect-ratio: 1/1;

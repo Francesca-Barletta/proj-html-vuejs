@@ -16,7 +16,7 @@
                                 <button class="white"><img src="/img/image(11).svg" alt=""></button>
                             </li>
                             <li>
-                                <button class="green"><img src="/img/image(8).svg" alt=""></button>
+                                <button class="green"><img src="/img/image(12).svg" alt=""></button>
                             </li>
                         </ul>
 
@@ -160,6 +160,9 @@
     h2{
       color:white;
       font-size:47px;
+    }
+    button{
+        cursor: pointer;
     }
 }
 .green {

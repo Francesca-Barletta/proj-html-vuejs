@@ -15,7 +15,7 @@
                             <button class="white"><img src="/img/image(11).svg" alt=""></button>
                         </li>
                         <li>
-                            <button class="green"><img src="/img/image(8).svg" alt=""></button>
+                            <button class="green"><img src="/img/image(12).svg" alt=""></button>
                         </li>
                     </ul>
 
@@ -87,23 +87,20 @@
     padding-bottom: 100px;
 }
 .card{
+    cursor:pointer;
     width:calc(100%/4);
     margin-top:50px;
+    &:hover{
+        .card-body{
+            background-color: #05CC7C;
+        }
+    }
 }
 .card-header{
     position: relative;
-    .new{
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 0;
-            color: #191935;
-            background-color: #05CC7C;
-            width: 60px;
-            height: 40px;
-        }
+img{
+    width:100%;
+}
 }
 .card-body{
     text-align: center;
@@ -131,6 +128,9 @@
     h2{
       color:white;
       font-size:47px;
+    }
+    button{
+        cursor: pointer;
     }
 }
 .green {

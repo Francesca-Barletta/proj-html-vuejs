@@ -16,7 +16,7 @@
                             <button class="white"><img src="/img/image(11).svg" alt=""></button>
                         </li>
                         <li>
-                            <button class="green"><img src="/img/image(8).svg" alt=""></button>
+                            <button class="green"><img src="/img/image(12).svg" alt=""></button>
                         </li>
                     </ul>
 
@@ -109,8 +109,20 @@
     padding-bottom: 100px;
 }
 .card{
+    cursor:pointer;
     width:calc(100%/4);
     margin-top:50px;
+    &:hover{
+        .card-body{
+            background-color: #05CC7C;
+        }
+        .round{
+            background-color: #152257;
+            img{
+                filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
+            }
+        }
+    }
 }
 .card-header{
     position: relative;
@@ -126,17 +138,26 @@
             width: 60px;
             height: 40px;
         }
+        img{
+            width: 100%;
+        }
 }
 .card-body{
+   
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5px;
     background-color: #152257;
-    color:white;
-    height: 85px;
-    padding: 0 15px;
-   
+    color: white;
+    padding: 24px 15px;
+
+    .card-title{
+        h3{
+            font-size: 23px;
+             margin-bottom: 10px;
+        }
+    }
 }
 .flex{
     display:flex;
@@ -156,6 +177,9 @@
     h2{
       color:white;
       font-size:47px;
+    }
+    button{
+        cursor: pointer;
     }
 }
 .green {
@@ -194,22 +218,21 @@
         }
  }
  .round{
-        border: none;
-        background-color:#05CC7C;
-        height: 55px;
-        color:#202046;
-        font-size:16px;
-        font-weight: 700;
-        aspect-ratio: 1/1;
-        border-radius: 9999px;
-        display:flex;
-        align-items: center;
-        justify-content: center;
+    border: none;
+    background-color: #05CC7C;
+    height: 55px;
+    font-size: 16px;
+    aspect-ratio: 1 / 1;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
         img{
             width: 20px;
             aspect-ratio:1/1;
             transform:translateX(10%);
+            filter: brightness(0) saturate(100%) invert(11%) sepia(39%) saturate(1791%) hue-rotate(213deg) brightness(94%) contrast(94%);
         }
     
     }

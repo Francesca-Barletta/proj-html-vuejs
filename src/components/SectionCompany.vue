@@ -141,12 +141,14 @@
     gap: 17px;
     margin-top: 50px;
     button{
+        cursor:pointer;
         border: none;
         background-color:#05CC7C;
         height: 55px;
         color:#202046;
         font-size:16px;
         font-weight: 700;
+    
     }
     .big{
         padding: 0 32px;
@@ -158,6 +160,14 @@
             width: 20px;
             aspect-ratio:1/1;
         }
+        &:hover{
+            background-color:#202046;
+            color:#05CC7C;
+            border: 1px solid #05CC7C;
+            img{
+                filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
+            }
+            }
     }
     .round{
         aspect-ratio: 1/1;
@@ -171,6 +181,14 @@
             aspect-ratio:1/1;
             transform:translateX(10%);
         }
+        &:hover{
+            background-color:#202046;
+            color:#05CC7C;
+            border: 1px solid #05CC7C;
+            img{
+                filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
+            }
+            }
     }
 
 }

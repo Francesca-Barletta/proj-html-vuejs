@@ -16,7 +16,7 @@
                                 <button class="white"><img src="/img/image(11).svg" alt=""></button>
                             </li>
                             <li>
-                                <button class="green"><img src="/img/image(8).svg" alt=""></button>
+                                <button class="green"><img src="/img/image(12).svg" alt=""></button>
                             </li>
                         </ul>
 
@@ -169,6 +169,9 @@
       color:white;
       font-size:47px;
     }
+    button{
+        cursor: pointer;
+    }
 }
 .card-title{
     margin-top: 50px;
@@ -255,6 +258,7 @@
     gap: 12px;
 }
 .icon {
+    cursor:pointer;
     border: none;
     height: 40px;
     aspect-ratio: 1/1;
@@ -273,6 +277,7 @@
     }
 }
 .big{
+        cursor:pointer;
         border: none;
         background-color:#05CC7C;
         height: 55px;
@@ -283,7 +288,11 @@
         border-radius:4px;
         display:flex;
         align-items: center;
-        
+        &:hover{
+            background-color:#202046;
+            color:#05CC7C;
+            border: 1px solid #05CC7C;
+            }
      
     }
 </style>
