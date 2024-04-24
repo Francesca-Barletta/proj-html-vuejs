@@ -19,12 +19,14 @@
 
                 </div>
                 <div class="col-6">
-                    <h4>12 Year Experience</h4>
+                    <div class="title">
+                        <h4>12 Year Experience</h4>
                     <h2>We Are The Best Gaming Company</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id totam quidem adipisci
                         veritatis, voluptate laborum architecto blanditiis sequi nobis sunt, eum sapiente voluptatem
                         molestiae mollitia neque labore ducimus enim.</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, autem.</p>
+                    </div>
                     <ul>
                         <li class="flex">
                             <div class="icon"><img src="/img/image(10).svg" alt=""></div> ipsum, dolor sit amet
@@ -117,6 +119,21 @@
             left: 50px;
             width: 85%;
         }
+}
+.title{
+    h4{
+        color: #05CC7C;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    h2{
+      color:white;
+      font-size:47px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 .buttons{
     display:flex;

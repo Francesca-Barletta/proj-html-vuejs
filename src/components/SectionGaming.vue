@@ -98,7 +98,7 @@
 
 h4{
     color:#05CC7C;
-    font-size:16px;
+    font-size:25px;
     margin-bottom: 26px;
 }
 h2{
@@ -109,6 +109,8 @@ h2{
 p{
     margin:20px 0;
     margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 32px;
 }
 .card{
     width:45%;
@@ -140,11 +142,12 @@ p{
     }
     h3{
         margin-top: 30px;
-        margin-bottom:16px;
-
+        margin-bottom:5px;
+        font-size:25px
     }
     p{
         margin: 0;
+        font-size:20px
   
 }
 }

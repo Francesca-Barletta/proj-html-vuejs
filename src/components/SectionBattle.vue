@@ -38,7 +38,7 @@
                                         <div class="icon"><img src="/img/image(13).svg" alt=""></div>
                                         <div class="icon"><img src="/img/image(14).svg" alt=""></div>
                                     </div>
-                                    <h3>08.45</h3>
+                                    <h3>9.45</h3>
                                     <p>1st November, 2022</p>
                                     <button class="big">View more</button>
                                 </div>
@@ -54,13 +54,13 @@
                         </div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3>Ninja Warrior Gaming</h3>
+                                <h3>Witch Gaming</h3>
                                 <div class="card-info">
                                     <div class="icons">
                                         <div class="icon"><img src="/img/image(13).svg" alt=""></div>
                                         <div class="icon"><img src="/img/image(14).svg" alt=""></div>
                                     </div>
-                                    <h3>08.45</h3>
+                                    <h3>9.45</h3>
                                     <p>1st November, 2022</p>
                                     <button class="big">View more</button>
                                 </div>
@@ -76,13 +76,13 @@
                         </div>
                         <div class="card-body">
                             <div class="card-title">
-                                <h3>Ninja Warrior Gaming</h3>
+                                <h3>SkullG Gaming</h3>
                                 <div class="card-info">
                                     <div class="icons">
                                         <div class="icon"><img src="/img/image(13).svg" alt=""></div>
                                         <div class="icon"><img src="/img/image(14).svg" alt=""></div>
                                     </div>
-                                    <h3>08.45</h3>
+                                    <h3>9.45</h3>
                                     <p>1st November, 2022</p>
                                     <button class="big">View more</button>
                                 </div>
@@ -124,7 +124,7 @@
 .card{
     width:calc(100%/3);
     margin-top:50px;
-    height: 690px;
+    height: 725px;
     background-color: #202046;
     border-radius: 20px;
     padding: 28px;
@@ -132,7 +132,7 @@
 }
 .card-header{
     background-color: #191935;
-    height: 300px;
+    height: 330px;
     border-radius: 20px;
     position: relative;
     .card-img{
@@ -149,14 +149,7 @@
        height: 300px;
     }
 }
-.card-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    color:white;
-   
-}
+
 .flex{
     display:flex;
     align-items: center;
@@ -168,18 +161,22 @@
     justify-content: space-between;
     align-items: flex-end;
     h4{
-        color:#05CC7C
+        color: #05CC7C;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
     h2{
       color:white;
-      font-size:40px;
+      font-size:47px;
     }
 }
 .card-title{
     margin-top: 50px;
     text-align: center;
     h3{
-        font-size: 23px;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 19px;
     }
 }
 .green {
@@ -214,6 +211,7 @@
             width: 20px;
             aspect-ratio:1/1;
             transform:translateX(10%);
+            filter: brightness(0) saturate(100%) invert(11%) sepia(39%) saturate(1791%) hue-rotate(213deg) brightness(94%) contrast(94%);
           
         }
  }
@@ -238,7 +236,6 @@
     
     }
     .card-info{
-    aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,16 +243,16 @@
     color: white;
     gap: 13px;
     h3{
-     font-size: 28px;
+     font-size: 43px;
+     margin:0;
     }
     p{
-        font-size:15px;
+        font-size:18px;
     }
 }
 .icons{
     display: flex;
-    margin: 10px 0;
-    gap: 5px;
+    gap: 12px;
 }
 .icon {
     border: none;
@@ -270,6 +267,7 @@
     img {
         width: 16px;
         aspect-ratio: 1/1;
+        filter: brightness(0) saturate(100%) invert(11%) sepia(39%) saturate(1791%) hue-rotate(213deg) brightness(94%) contrast(94%);
         
 
     }

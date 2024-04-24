@@ -228,12 +228,12 @@
     text-align: center;
     h4{
         color: #05CC7C;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
     h2{
-        color:white;
-        font-size: 48px;
-        margin-top: 0px;
-        margin-bottom: 40px;
+      color:white;
+      font-size:47px;
     }
     ul{
         margin: 20px 0;

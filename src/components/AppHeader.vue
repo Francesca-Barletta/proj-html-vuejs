@@ -63,7 +63,7 @@ export default{
 
 </template>
 
-<style lang="scss">
+<style lang="scss"scoped>
 .section-header{
     background-image:url(/img/banner1.png);
     background-size: cover;
@@ -142,6 +142,7 @@ export default{
     margin: 0 auto;
     h4{
         color: #05CC7C;
+        margin-bottom: 35px;
     }
     h1{
         color: white;
@@ -215,7 +216,7 @@ export default{
     border-radius: 10px;
     padding:0 10px;
     position: absolute;
-    top:245px;
+    top:215px;
     .box{
         width:150px;
         aspect-ratio: 1/1;

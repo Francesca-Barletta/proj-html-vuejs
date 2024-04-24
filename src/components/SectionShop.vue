@@ -133,6 +133,12 @@
         width: 18px;
         margin-right: 5px;
     }
+    .green-star{
+        filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
+    }
+    .white-star{
+        filter:invert(100%);
+    }
    
 }
 .flex{
@@ -147,11 +153,13 @@
     justify-content: space-between;
     align-items: flex-end;
     h4{
-        color:#05CC7C
+        color: #05CC7C;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
     h2{
       color:white;
-      font-size:40px;
+      font-size:47px;
     }
 }
 .green {
@@ -186,7 +194,7 @@
             width: 20px;
             aspect-ratio:1/1;
             transform:translateX(10%);
-          
+            filter: brightness(0) saturate(100%) invert(11%) sepia(39%) saturate(1791%) hue-rotate(213deg) brightness(94%) contrast(94%);
         }
  }
     .discount{

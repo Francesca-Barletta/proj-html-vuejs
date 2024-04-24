@@ -76,12 +76,14 @@
 .title{
   width: 50%;
   text-align: center;
-    h4{
-        color:#05CC7C
+  h4{
+        color: #05CC7C;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
     h2{
       color:white;
-      font-size:40px;
+      font-size:47px;
     }
 }
 .green {

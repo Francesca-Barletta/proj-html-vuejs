@@ -124,11 +124,13 @@
     justify-content: space-between;
     align-items: flex-end;
     h4{
-        color:#05CC7C
+        color: #05CC7C;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
     h2{
       color:white;
-      font-size:40px;
+      font-size:47px;
     }
 }
 .green {
@@ -163,7 +165,7 @@
             width: 20px;
             aspect-ratio:1/1;
             transform:translateX(10%);
-          
+            filter: brightness(0) saturate(100%) invert(11%) sepia(39%) saturate(1791%) hue-rotate(213deg) brightness(94%) contrast(94%);
         }
  }
  .round{

@@ -34,7 +34,7 @@
                             <div class="card-info">
                                 <div class="icons">
                                     <img src="/img/image(13).svg" alt=""><span>By Admin |</span>
-                                    <img src="/img/image(14).svg" alt=""><span>Oct 25, 2022</span>
+                                    <img src="/img/image(21).svg" alt=""><span>Oct 25, 2022</span>
                                 </div>
                                 <button class="big">read more<img src="/img/image(8).svg" alt=""></button>
                             </div>
@@ -52,7 +52,7 @@
                             <div class="card-info">
                                 <div class="icons">
                                     <img src="/img/image(13).svg" alt=""><span>By Admin |</span>
-                                    <img src="/img/image(14).svg" alt=""><span>Oct 25, 2022</span>
+                                    <img src="/img/image(21).svg" alt=""><span>Oct 25, 2022</span>
                                 </div>
                                 <button class="big">read more<img src="/img/image(8).svg" alt=""></button>
                             </div>
@@ -70,7 +70,7 @@
                             <div class="card-info">
                                 <div class="icons">
                                     <img src="/img/image(13).svg" alt=""><span>By Admin |</span>
-                                    <img src="/img/image(14).svg" alt=""><span>Oct 25, 2022</span>
+                                    <img src="/img/image(21).svg" alt=""><span>Oct 25, 2022</span>
                                 </div>
                                 <button class="big">read more<img src="/img/image(8).svg" alt=""></button>
                             </div>
@@ -88,7 +88,7 @@
                             <div class="card-info">
                                 <div class="icons">
                                     <img src="/img/image(13).svg" alt=""><span>By Admin |</span>
-                                    <img src="/img/image(14).svg" alt=""><span>Oct 25, 2022</span>
+                                    <img src="/img/image(21).svg" alt=""><span>Oct 25, 2022</span>
                                 </div>
                                 <button class="big">read more<img src="/img/image(8).svg" alt=""></button>
                             </div>
@@ -144,19 +144,23 @@
 .card{
     width:calc(100%/4);
     margin-top:50px;
-    height: 510px;
+    height: 570px;
     background-color: #202046;
     border-radius: 20px;
-   
+   .card-header{
+    
+    img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        height: 100%;
+    }
+   }
  
 }
 
 .card-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    color:white;
+    padding: 32px;
+    height: 226px;
    
 }
 .flex{
@@ -170,18 +174,22 @@
     justify-content: space-between;
     align-items: flex-end;
     h4{
-        color:#05CC7C
+        color: #05CC7C;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
     h2{
       color:white;
-      font-size:40px;
+      font-size:47px;
     }
 }
 .card-title{
-    margin-top: 30px;
-    text-align: center;
+
     h3{
         font-size: 23px;
+        color: white;
+        margin-bottom: 23px;
+        text-align: center;
     }
 }
 .green {
@@ -216,6 +224,7 @@
             width: 20px;
             aspect-ratio:1/1;
             transform:translateX(10%);
+            filter: brightness(0) saturate(100%) invert(11%) sepia(39%) saturate(1791%) hue-rotate(213deg) brightness(94%) contrast(94%);
           
         }
  }
@@ -240,14 +249,12 @@
     
     }
     .card-info{
-    aspect-ratio: 1 / 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: white;
-    gap: 8px;
-    align-items: center;
-    margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+        gap: 30px;
+        align-items: center;
     h3{
      font-size: 28px;
     }
@@ -257,11 +264,12 @@
 }
 .icons{
 display:flex;
-gap: 5px;
+gap: 10px;
 
     img {
         width: 16px;
         aspect-ratio: 1/1;
+        filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
     }
 }
 
@@ -326,6 +334,8 @@ button{
         width: 16px;
         aspect-ratio: 1/1;
         margin: 0 5px;
+        transform: translateY(4px);
+        filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
     }
         span{
             color: grey;
