@@ -1,5 +1,9 @@
 <script>
+import SocialMenu from './SocialMenu.vue';
 export default {
+    components: {
+        SocialMenu
+    },
     props: {
         member: Object
     }
@@ -12,7 +16,9 @@ export default {
 <div class="card">
                     <div class="card-header">
                         <img :src="'/img/'+member.url" alt="">
-                        
+                        <ul class="social">
+                            <SocialMenu/>
+                        </ul>
                     </div>
                     <div class="card-body">   
                             <h3>{{ member.name }}</h3>
@@ -23,18 +29,29 @@ export default {
 <style lang="scss" scoped>
 .card{
     cursor:pointer;
-    
     margin-top:50px;
     &:hover{
         .card-body{
             background-color: #05CC7C;
         }
+                .social {
+                    display: block;
+                    display: flex;
+                    gap: 20px;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 50%;
+                    transform: translateX(-50%)
+                }
     }
 }
 .card-header{
     position: relative;
 img{
     width:100%;
+}
+.social{
+    display:none;
 }
 }
 .card-body{
