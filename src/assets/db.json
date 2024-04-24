@@ -76,5 +76,34 @@
             "text":"Lorem ipsum dolor sit amet.",
             "btn":"image(9).svg"
         }
+    ],
+    "battleTeams":[
+        {
+            "img":"m1.png",
+            "name":"Ninja Warrior Gaming",
+            "yt":"image(13).svg",
+            "msg":"image(14).svg",
+            "time":"9.45",
+            "date":"1st November, 2022",
+            "btn":"View more"
+        },
+        {
+            "img":"m2.png",
+            "name":"Witch Gaming",
+            "yt":"image(13).svg",
+            "msg":"image(14).svg",
+            "time":"9.45",
+            "date":"1st November, 2022",
+            "btn":"View more"
+        },
+        {
+            "img":"m3.png",
+            "name":"SkullG Gaming",
+            "yt":"image(13).svg",
+            "msg":"image(14).svg",
+            "time":"9.45",
+            "date":"1st November, 2022",
+            "btn":"View more"
+        }
     ]
 }
