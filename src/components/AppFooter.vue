@@ -1,8 +1,15 @@
 <script>
-import AppMenu from './AppMenu.vue'
+import { store } from '../store.js';
+import AppMenu from './AppMenu.vue';
+
 export default{
-    components:{
+    components: {
         AppMenu
+    },
+    data() {
+        return {
+            store: store,
+        }
     }
 }
 </script>
@@ -13,7 +20,11 @@ export default{
         <div class="container">
             <div class="row footermenu">
                 <img class="logo" src="/img/menulogo.png" alt="">
-                <AppMenu/>
+                <ul class="menu">
+                    <li v-for="(link, i) in store.menu" :key="i">
+                    <AppMenu :item="link"/>
+                    </li>
+                </ul>
             </div>
             <hr>
             <div class="flex">
@@ -64,25 +75,17 @@ export default{
     height: 100px;
     justify-content: space-between;
 }
-// .menu{
-//     display: flex;
-//     align-items: center;
-//     color: white;
-//     gap: 27px;
-//     li{
-//         &:hover{
-//             color:#05CC7C;
-//         }
-//     }
-//     img{
-//         width:10px;
-//         margin-left:1px;
-//         transform: translatey(10%);
-//         &:hover{
-//             fill:#05CC7C;
-//         }
-//     }
-// }
+.menu{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 27px;
+    li{
+        &:hover{
+            color:#05CC7C;
+        }
+    }
+}
 .logo{
    height: 70px;
    width: 196px;

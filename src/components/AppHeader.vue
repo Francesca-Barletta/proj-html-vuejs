@@ -1,5 +1,17 @@
 <script>
+import { store } from '../store.js';
+import AppMenu from './AppMenu.vue';
 
+export default{
+    components: {
+        AppMenu
+    },
+    data() {
+        return {
+            store: store,
+        }
+    }
+}
 </script>
 
 <template>
@@ -8,12 +20,9 @@
             <div class="row navbar">
                 <img class="logo" src="/img/menulogo.png" alt="">
                 <ul class="menu">
-                    <li><a href="#">Home<img src="/img/image.svg" alt=""></a></li>
-                    <li><a href="#">Pages<img src="/img/image.svg" alt=""></a></li>
-                    <li><a href="#">Tournament</a></li>
-                    <li><a href="#">Shop<img src="/img/image.svg" alt=""></a></li>
-                    <li><a href="#">Blog<img src="/img/image.svg" alt=""></a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li v-for="(link, i) in store.menu" :key="i">
+                    <AppMenu :item="link"/>
+                    </li>
                 </ul>
                 <ul class="tools">
                     <li class="round"><img  src="/img/image(1).svg" alt=""></li>
