@@ -1,5 +1,17 @@
 <script>
-
+import data from '../assets/db.json'
+import ShopCard from './ShopCard.vue'
+export default {
+    components: {
+       ShopCard
+    },
+    data() {
+        return {
+           
+            products: data.products
+        }
+    }
+}
 </script>
 <template>
     <div class="section">
@@ -22,69 +34,11 @@
 
                     </div>
                 </div>
-                <div class="box-card">
-                    <!-- card1 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="/img/s1.png" alt="">
-
-                        </div>
-                        <div class="card-body">
-                            <img class="green-star" src="/img/image(20).svg" alt="">
-                            <img class="green-star" src="/img/image(20).svg" alt="">
-                            <img class="white-star" src="/img/image(20).svg" alt="">
-                            <img class="white-star" src="/img/image(20).svg" alt="">
-                            <h3>Asus Rog Strix A53</h3>
-                            <span class="discount">$960.00</span>
-                            <span class="price">$999.00</span>
-                        </div>
-                    </div>
-                    <!-- card2 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="/img/s2.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <img class="green-star" src="/img/image(20).svg" alt="">
-                            <img class="green-star" src="/img/image(20).svg" alt="">
-                            <img class="white-star" src="/img/image(20).svg" alt="">
-                            <img class="white-star" src="/img/image(20).svg" alt="">
-                            <h3>Asus Rog Strix A53</h3>
-                            <span class="discount">$960.00</span>
-                            <span class="price">$999.00</span>
-                        </div>
-                    </div>
-                    <!-- card3 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="/img/s3.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <img class="green-star" src="/img/image(20).svg" alt="">
-                            <img class="green-star" src="/img/image(20).svg" alt="">
-                            <img class="white-star" src="/img/image(20).svg" alt="">
-                            <img class="white-star" src="/img/image(20).svg" alt="">
-                            <h3>Asus Rog Strix A53</h3>
-                            <span class="discount">$960.00</span>
-                            <span class="price">$999.00</span>
-                        </div>
-                    </div>
-                    <!-- card4 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="/img/s4.png" alt="">
-                        </div>
-                        <div class="card-body">
-                            <img class="green-star" src="/img/image(20).svg" alt="">
-                            <img class="green-star" src="/img/image(20).svg" alt="">
-                            <img class="white-star" src="/img/image(20).svg" alt="">
-                            <img class="white-star" src="/img/image(20).svg" alt="">
-                            <h3>Asus Rog Strix A53</h3>
-                            <span class="discount">$960.00</span>
-                            <span class="price">$999.00</span>
-                        </div>
-                    </div>
-                </div>
+                <ul class="box-card">
+                   <li class="col-3" v-for="(product, i) in products" :key="i">
+                        <ShopCard :product="product"/>
+                  </li> 
+                </ul>
             </div>
         </div>
     </div>
@@ -112,34 +66,8 @@
     gap: 20px;
     padding-bottom: 100px;
 }
-.card{
+.col-3{
     width:calc(100%/4);
-    margin-top:50px;
-}
-.card-header{
-    background-color: #191935;
-    border-radius: 20px;
-    height: 260px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-}
-.card-body{
-    color:white;
-    height: 85px;
-    padding: 15px;
-    img{
-        width: 18px;
-        margin-right: 5px;
-    }
-    .green-star{
-        filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
-    }
-    .white-star{
-        filter:invert(100%);
-    }
-   
 }
 .flex{
     display:flex;
@@ -200,7 +128,5 @@
             filter: brightness(0) saturate(100%) invert(11%) sepia(39%) saturate(1791%) hue-rotate(213deg) brightness(94%) contrast(94%);
         }
  }
-    .discount{
-        color: #05CC7C;
-    }
+
 </style>
