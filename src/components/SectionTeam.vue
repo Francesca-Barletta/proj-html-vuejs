@@ -1,5 +1,17 @@
 <script>
-
+import data from '../assets/db.json'
+import TeamCard from './TeamCard.vue'
+export default{
+    components: {
+       TeamCard
+    },
+    data() {
+        return {
+           
+            team: data.jobTeam
+        }
+    }
+}
 </script>
 <template>
     <div class="section">
@@ -21,49 +33,11 @@
 
                 </div>
             </div>
-            <div class="box-card">
- <!-- card1 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/team1.png" alt="">
-                        
-                    </div>
-                    <div class="card-body">   
-                            <h3>Cristiano Messi</h3>
-                            <h4>CEO/Founder</h4>
-                    </div>
-                </div>
-<!-- card2 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/team2.png" alt="">
-                    </div>
-                    <div class="card-body">
-                            <h3>Sergio Naymer</h3>
-                            <h4>Programmer</h4>
-                    </div>
-                </div>
-<!-- card3 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/team3.png" alt="">
-                    </div>
-                    <div class="card-body">
-                            <h3>Antonel Roccuzzo</h3>
-                            <h4>Project Manager</h4>
-                    </div>
-                </div>
-<!-- card4 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/team4.png" alt="">
-                    </div>
-                    <div class="card-body">
-                            <h3>Lionel Ramos</h3>
-                            <h4>Game Designer</h4>
-                    </div>
-                </div>
-            </div>
+            <ul class="box-card">
+                <li class="col-3" v-for="(member, i) in team" :key="i">
+                    <TeamCard :member="member"/>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -86,29 +60,8 @@
     gap: 20px;
     padding-bottom: 100px;
 }
-.card{
-    cursor:pointer;
+.col-3{
     width:calc(100%/4);
-    margin-top:50px;
-    &:hover{
-        .card-body{
-            background-color: #05CC7C;
-        }
-    }
-}
-.card-header{
-    position: relative;
-img{
-    width:100%;
-}
-}
-.card-body{
-    text-align: center;
-    background-color: #152257;
-    color:white;
-    height: 85px;
-    padding: 15px;
-   
 }
 .flex{
     display:flex;

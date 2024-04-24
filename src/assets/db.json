@@ -105,5 +105,27 @@
             "date":"1st November, 2022",
             "btn":"View more"
         }
+    ],
+    "jobTeam":[
+        {
+            "url":"team1.png",
+            "name":"Cristiano Messi",
+            "rule":"CEO/Founder"
+        },
+        {
+            "url":"team2.png",
+            "name":"Sergio Naymer",
+            "rule":"Programmer"
+        },
+        {
+            "url":"team3.png",
+            "name":"Antonel Roccuzzo",
+            "rule":"Project Manager"
+        },
+        {
+            "url":"team4.png",
+            "name":"Lionel Ramos",
+            "rule":"Game Designer"
+        }
     ]
 }
