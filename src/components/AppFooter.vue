@@ -1,5 +1,10 @@
 <script>
-
+import AppMenu from './AppMenu.vue'
+export default{
+    components:{
+        AppMenu
+    }
+}
 </script>
 
 <template>
@@ -8,14 +13,7 @@
         <div class="container">
             <div class="row footermenu">
                 <img class="logo" src="/img/menulogo.png" alt="">
-                <ul class="menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">PAGES</a></li>
-                    <li><a href="#">TOURNAMENT</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
+                <AppMenu/>
             </div>
             <hr>
             <div class="flex">
@@ -66,25 +64,25 @@
     height: 100px;
     justify-content: space-between;
 }
-.menu{
-    display: flex;
-    align-items: center;
-    color: white;
-    gap: 27px;
-    li{
-        &:hover{
-            color:#05CC7C;
-        }
-    }
-    img{
-        width:10px;
-        margin-left:1px;
-        transform: translatey(10%);
-        &:hover{
-            fill:#05CC7C;
-        }
-    }
-}
+// .menu{
+//     display: flex;
+//     align-items: center;
+//     color: white;
+//     gap: 27px;
+//     li{
+//         &:hover{
+//             color:#05CC7C;
+//         }
+//     }
+//     img{
+//         width:10px;
+//         margin-left:1px;
+//         transform: translatey(10%);
+//         &:hover{
+//             fill:#05CC7C;
+//         }
+//     }
+// }
 .logo{
    height: 70px;
    width: 196px;
