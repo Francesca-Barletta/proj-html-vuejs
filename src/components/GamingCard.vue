@@ -34,8 +34,8 @@ export default {
     }
     h3{
         margin-top: 30px;
-        margin-bottom:5px;
-        font-size:25px
+        margin-bottom:3px;
+        font-size:23px
     }
     p{
         margin: 0;
