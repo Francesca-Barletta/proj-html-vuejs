@@ -1,10 +1,11 @@
 <script>
 import data from '../assets/db.json'
 import AppMenu from './AppMenu.vue';
-
+import SocialMenu from './SocialMenu.vue'
 export default{
     components: {
-        AppMenu
+        AppMenu,
+        SocialMenu
     },
     data() {
         return {
@@ -33,11 +34,8 @@ export default{
         </div>
         <div class="container-lg">
             <div class="row hero-section">
-                <ul class="social">
-                    <li class="round"><a href="#"><img src="/img/image(4).svg" alt=""></a></li>
-                    <li class="round"><a href="#"><img src="/img/image(5).svg" alt=""></a></li>
-                    <li class="round"><a href="#"><img src="/img/image(6).svg" alt=""></a></li>
-                    <li class="round"><a href="#"><img src="/img/image(7).svg" alt=""></a></li>
+                <ul>
+                 <SocialMenu/>
                 </ul>
                 <div class="hero">
                     <h4>WELCOME TO RAXG</h4>
@@ -203,28 +201,6 @@ export default{
                 filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
             }
             }
-    }
-}
-
-.social{
-    .round{
-        cursor:pointer;
-        width:50px;
-        aspect-ratio: 1/1;
-        border-radius: 9999px;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #202046;
-        margin-bottom:12px;
-    img{
-        filter: invert(100%);
-        width: 20px;
-        transform: translateY(2px);
-    }
-    &:hover{
-        background-color: #05CC7C;
-    }
     }
 }
 .row-pictures{
