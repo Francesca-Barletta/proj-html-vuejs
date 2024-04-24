@@ -1,0 +1,28 @@
+{
+    "menu": [
+        {
+            "text": "Home",
+            "url": "#"
+        },
+        {
+            "text": "Pages",
+            "url": "#"
+        },
+        {
+            "text": "Tournament",
+            "url": "#"
+        },
+        {
+            "text": "Shop",
+            "url": "#"
+        },
+        {
+            "text": "Blog",
+            "url": "#"
+        },   
+         {
+            "text": "Contact",
+            "url": "#"
+        }
+    ]
+}

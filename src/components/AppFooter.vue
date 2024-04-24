@@ -1,5 +1,6 @@
 <script>
-import { store } from '../store.js';
+
+import data from '../assets/db.json'
 import AppMenu from './AppMenu.vue';
 
 export default{
@@ -8,7 +9,7 @@ export default{
     },
     data() {
         return {
-            store: store,
+             menu: data.menu
         }
     }
 }
@@ -21,7 +22,7 @@ export default{
             <div class="row footermenu">
                 <img class="logo" src="/img/menulogo.png" alt="">
                 <ul class="menu">
-                    <li v-for="(link, i) in store.menu" :key="i">
+                    <li v-for="(link, i) in menu" :key="i">
                     <AppMenu :item="link"/>
                     </li>
                 </ul>

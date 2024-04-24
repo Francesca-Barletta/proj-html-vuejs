@@ -1,7 +1,7 @@
 <script>
 export default {
     props: {
-        item: String
+        item: Object
     }
 
 }
@@ -9,7 +9,7 @@ export default {
 
 <template>
 
-    <a href="#">{{ item }}</a>
+    <a :href="item.url">{{ item.text }}</a>
 
 </template>
 <style lang="scss" scoped>
