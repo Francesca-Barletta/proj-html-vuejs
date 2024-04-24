@@ -1,5 +1,17 @@
 <script>
-
+import data from '../assets/db.json'
+import BestCard from './BestCard.vue'
+export default{
+    components: {
+       BestCard
+    },
+    data() {
+        return {
+           
+            players: data.bestPlayers
+        }
+    }
+}
 </script>
 <template>
     <div class="section">
@@ -22,64 +34,11 @@
 
                 </div>
             </div>
-            <div class="box-card">
- <!-- card1 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/protfolio1.png" alt="">
-                        <div class="new">New</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3>Assassin's Creed</h3>
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                        </div>
-                        <button class="round"><img src="/img/image(9).svg" alt=""></button>
-                    </div>
-                </div>
-<!-- card2 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/protfolio2.png" alt="">
-                        <div class="new">New</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3>Call Of Deauty</h3>
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                        </div>
-                        <button class="round"><img src="/img/image(9).svg" alt=""></button>
-                    </div>
-                </div>
-<!-- card3 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/protfolio3.png" alt="">
-                        <div class="new">New</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3>Tomb Raider</h3>
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                        </div>
-                        <button class="round"><img src="/img/image(9).svg" alt=""></button>
-                    </div>
-                </div>
-<!-- card4 -->
-                <div class="card">
-                    <div class="card-header">
-                        <img src="/img/protfolio4.png" alt="">
-                        <div class="new">New</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3>Mortal Combat X</h3>
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                        </div>
-                        <button class="round"><img src="/img/image(9).svg" alt=""></button>
-                    </div>
-                </div>
-            </div>
+            <ul class="box-card">
+                <li class="col-3" v-for="(player, i) in players" :key="i">
+                    <BestCard :player="player"/>
+                </li>
+            </ul>
         </div>
         </div>
     </div>
@@ -108,56 +67,8 @@
     gap: 20px;
     padding-bottom: 100px;
 }
-.card{
-    cursor:pointer;
+.col-3{
     width:calc(100%/4);
-    margin-top:50px;
-    &:hover{
-        .card-body{
-            background-color: #05CC7C;
-        }
-        .round{
-            background-color: #152257;
-            img{
-                filter: brightness(0) saturate(100%) invert(58%) sepia(52%) saturate(7406%) hue-rotate(125deg) brightness(97%) contrast(101%);
-            }
-        }
-    }
-}
-.card-header{
-    position: relative;
-    .new{
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 0;
-            color: #191935;
-            background-color: #05CC7C;
-            width: 60px;
-            height: 40px;
-        }
-        img{
-            width: 100%;
-        }
-}
-.card-body{
-   
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-    background-color: #152257;
-    color: white;
-    padding: 24px 15px;
-
-    .card-title{
-        h3{
-            font-size: 23px;
-             margin-bottom: 10px;
-        }
-    }
 }
 .flex{
     display:flex;

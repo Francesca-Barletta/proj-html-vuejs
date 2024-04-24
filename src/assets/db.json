@@ -24,5 +24,57 @@
             "text": "Contact",
             "url": "#"
         }
+    ],
+    "gamingCards":[
+        {
+            "title": "Live Streaming",
+            "text": "lorem ipsum dolor sit amet consectetur",
+            "url": "feature1.png"
+        },
+        {
+            "title": "Gaming News",
+            "text": "lorem ipsum dolor sit amet consectetur",
+            "url": "feature2.png"
+        },
+        {
+            "title": "Great Tournament",
+            "text": "lorem ipsum dolor sit amet consectetur",
+            "url": "feature3.png"
+        },
+        {
+            "title": "Awward Ceremony",
+            "text": "lorem ipsum dolor sit amet consectetur",
+            "url": "feature4.png"
+        }
+    ],
+    "bestPlayers":[
+        {
+            "url":"protfolio1.png",
+            "badge":"New",
+            "title":"Assassin's Creed",
+            "text":"Lorem ipsum dolor sit amet.",
+            "btn":"image(9).svg"
+        },
+        {
+            "url":"protfolio2.png",
+            "badge":"New",
+            "title":"Call Of Deauty",
+            "text":"Lorem ipsum dolor sit amet.",
+            "btn":"image(9).svg"
+        },
+        {
+            "url":"protfolio3.png",
+            "badge":"New",
+            "title":"Tomb Raider",
+            "text":"Lorem ipsum dolor sit amet.",
+            "btn":"image(9).svg"
+        },
+        {
+            "url":"protfolio4.png",
+            "badge":"New",
+            "title":"Mortal Combat X",
+            "text":"Lorem ipsum dolor sit amet.",
+            "btn":"image(9).svg"
+        }
     ]
 }

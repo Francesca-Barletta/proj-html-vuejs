@@ -1,5 +1,17 @@
 <script>
-
+import data from '../assets/db.json'
+import GamingCard from './GamingCard.vue'
+export default{
+    components: {
+       GamingCard
+    },
+    data() {
+        return {
+           
+            cards: data.gamingCards
+        }
+    }
+}
 </script>
 
 <template>
@@ -13,42 +25,14 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id totam quidem adipisci
                         veritatis, voluptate laborum architecto blanditiis sequi nobis sunt, eum sapiente voluptatem
                         molestiae mollitia neque labore ducimus enim.</p>
-                   
-                   
-
                 </div>
                 <div class="col-6">
-                   <div class="box">
-                        <div class="card">
-                            <div class="icon-box">
-                                <img src="/img/feature1.png" alt="">
-                            </div>
-                            <h3>Live Streaming</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
-                        <div class="card">
-                            <div class="icon-box">
-                                <img src="/img/feature2.png" alt="">
-                            </div>
-                                <h3>Gaming News</h3>
-                               <p>Lorem ipsum dolor sit amet consectetur</p>
-                        </div>
-                        <div class="card">
-                            <div class="icon-box">
-                                <img src="/img/feature3.png" alt="">
-                            </div>
-                            <h3>Great Tournament</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur</p>
-                        </div>
-                        <div class="card">
-                            <div class="icon-box">
-                                <img src="/img/feature4.png" alt="">
-                            </div>
-                            <h3>Awward Ceremony</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur</p>
-                        </div>
+                   <ul class="box">
+                        <li v-for="(card, i) in cards" :key="i">
+                            <GamingCard :card="card"/>
+                        </li>
 
-                   </div>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -94,6 +78,9 @@
    justify-content: center;
    align-items:center;
    flex-wrap: wrap;
+   li{
+    width: 45%;
+   }
 }
 
 h4{
@@ -111,45 +98,6 @@ p{
     margin-bottom: 30px;
     font-size: 20px;
     line-height: 32px;
-}
-.card{
-    width:45%;
-    aspect-ratio: 1/1;
-    margin: 10px;
-    border-radius:20px;
-    background-color: #333287 ;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    text-align: center;
-    padding:48px 29px;
-    &:hover{
-        background-color: #05CC7C;
-        h3, p{
-            color: #202046;
-        }
-    }
-    .icon-box{
-        width:100px;
-        aspect-ratio:1/1;
-        border-radius:200px;
-        display:flex;
-        justify-content:center;
-        align-items: center;
-        background-color: #202046;
-        padding:17px;
-    }
-    h3{
-        margin-top: 30px;
-        margin-bottom:5px;
-        font-size:25px
-    }
-    p{
-        margin: 0;
-        font-size:20px
-  
-}
 }
 
 </style>
