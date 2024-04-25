@@ -45,10 +45,7 @@ export default{
 .section{
     background-color: #191935;
 }
-.container{
-    width:80%;
-    margin: 0 auto;
-}
+
 .box-header{
     padding-top:100px;
    

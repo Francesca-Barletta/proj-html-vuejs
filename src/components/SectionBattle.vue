@@ -49,16 +49,14 @@ export default{
 .section{
     background-color: #202046;
     background-image: url(/img/v-bg.png);
+    background-size: cover;
    
     .bg-overlay{
         background: rgba(25, 25, 53, 0.7);
     }
     
 }
-.container{
-    width:80%;
-    margin: 0 auto;
-}
+
 .box-header{
     padding-top:100px;
    

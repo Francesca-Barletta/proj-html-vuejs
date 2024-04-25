@@ -67,12 +67,8 @@ export default{
     background-size: cover;
     height: 900px;
 }
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
 .container-lg{
-    width: 90%;
+    width: 1600px;
     margin: 0 auto;
 }
 .relative{

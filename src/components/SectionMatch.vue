@@ -212,10 +212,7 @@
     background-color: #191935;
     padding-bottom: 100px;
 }
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
+
 .col-6{
     width:50%;
     display: flex;

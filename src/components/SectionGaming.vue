@@ -47,15 +47,13 @@ export default{
 .section{
     background-image:url(/img/Vector.png);
     background-color: #202046;
+    background-size: cover;
     .bg-section{
         background: rgba(25, 25, 53, 0.7);
     }
     
 }
-.container{
-    width:80%;
-    margin: 0 auto;
-}
+
 .flex{
     display:flex;
     align-items: center;

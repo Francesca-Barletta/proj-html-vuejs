@@ -57,8 +57,7 @@ export default{
     
 }
 .container{
-    width: 80%;
-    margin: 0 auto;
+ 
     height: 370px;
     padding-top: 150px;
     hr{

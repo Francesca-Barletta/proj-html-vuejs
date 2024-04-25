@@ -122,10 +122,7 @@
 .section{
     background-color: #191935; 
 }
-.container{
-    width:80%;
-    margin: 0 auto;
-}
+
 .col-6{
     width: 50%;
 }
